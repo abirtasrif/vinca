@@ -9,19 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        dark: "",
-        light: "",
-        red: "",
-        grey: "",
-        pink: "",
-        orange: "",
-        green: "",
-        violet: "",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        dark: "#1c140a",
+        light: "#e5e3e7",
+        red: "#a15133",
+        grey: "#605a3f",
+        pink: "#ffd8e9",
+        orange: "#ff9750",
+        green: "#185701",
+        blue: "#2d2bb1",
+        violet: "#6f3289",
       },
     },
   },

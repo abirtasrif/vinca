@@ -20,11 +20,19 @@ export const buttonVariants = cva(
   }
 );
 
-interface Buttonprops extends
+interface Buttonprops
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {}
 
-
-const Button = () => {
-  return <button>Button</button>;
+const Button: React.FC<Buttonprops> = ({
+  children,
+  type,
+  disabled,
+  onClick,
+  variant,
+  size,
+}) => {
+  return <button >{children}</button>;
 };
 
 export default Button;

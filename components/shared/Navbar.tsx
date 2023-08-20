@@ -2,10 +2,55 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <header className="h-20 border-b border-gray flex item-center bg-white">
-      <div className="wrapper grid ">
+      <div className="wrapper grid grid-cols-3 gap-20 items-center">
+        {/* LEFT NAV */}
         <nav>
-          <ul>
-            <li></li>
+          <ul className="flex gap-3 justify-end">
+            <li>
+              <Link href="/" className="link-item">
+                Link 1
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className="link-item">
+                Link 2
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className="link-item">
+                Link 3
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* NAV MID */}
+        <nav>
+          <ul className="flex justify-center">
+            <li>
+              <Link href="/" className="lowercase text-4xl font-bold text-pink">
+                Vinca
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* RIGHT NAV  */}
+        <nav>
+          <ul className="flex gap-3 justify-end">
+            <li>
+              <Link href="/" className="link-item">
+                Link 4
+              </Link>
+            </li>
+            <li>
+              <Link href="/" className="link-item">
+                Link 5
+              </Link>
+            </li>
+            <li>
+              <Link href="/user/sign-in">Sign In</Link>
+            </li>
           </ul>
         </nav>
       </div>

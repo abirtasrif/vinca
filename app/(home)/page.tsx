@@ -1,5 +1,12 @@
+import Hero from "@/components/home/Hero";
+import Button from "@/components/ui/Button";
+
 const HomePage = () => {
-  return <main>HomePage</main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
 
 export default HomePage;

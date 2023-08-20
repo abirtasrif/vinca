@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const SignInPage = () => {
-  return <div>SignInPage</div>;
+  return <main>SignInPage</main>;
 };
 
 export default SignInPage;

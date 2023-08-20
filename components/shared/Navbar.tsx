@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { buttonVariants } from "../ui/Button";
 const Navbar = () => {
   return (
     <header className="h-20 border-b border-gray flex item-center bg-white">
@@ -49,7 +50,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/user/sign-in">Sign In</Link>
+              <Link
+                href="/user/signin"
+                className={buttonVariants({ variant: "ocean" })}
+              >
+                Sign In
+              </Link>
             </li>
           </ul>
         </nav>

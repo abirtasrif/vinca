@@ -29,7 +29,10 @@ const Navbar = () => {
         <nav>
           <ul className="flex justify-center">
             <li>
-              <Link href="/" className="lowercase text-4xl font-bold text-pink">
+              <Link
+                href="/"
+                className="lowercase text-4xl font-bold text-green"
+              >
                 Vinca
               </Link>
             </li>

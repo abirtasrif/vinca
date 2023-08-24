@@ -1,67 +1,87 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="wrapper section-padding h-[calc(100vh-5rem)] ">
-      <div className="w-full h-full  grid grid-rows-6">
-        {/* FIRST ROW */}
-        <div className="w-full h-full bg-green"></div>
-
-        {/* SECOND ROW */}
-        <div className="w-full h-full grid grid-cols-[30%_auto] gap-20">
-          <div className="w-full h-full overflow-hidden rounded-[0_40px_0_40px]">
+    <section className='wrapper section-padding h-[calc(100vh-5rem)] '>
+      <div className='grid-rows-8 grid h-auto w-full gap-5 overflow-hidden'>
+        {/* FIRSTROW */}
+        <div className='grid h-[8rem] w-full grid-cols-[30%_auto] gap-20 bg-gray-400'>
+          <div className='h-full w-full overflow-hidden rounded-[0_40px_0_40px]'>
             <Image
-              src="https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
               height={500}
-              width={600}
-              className="w-full h-full object-cover"
-              alt="first-image"
+              width={620}
+              className='h-full w-full object-cover'
+              alt='first-image'
             />
           </div>
 
-          <div className="w-full h-full  flex flex-col justify-center">
-            <h2 className="text-6xl uppercase font-semibold">
+          <div className='flex h-full w-full flex-col justify-center'>
+            <h2 className='text-6xl font-semibold uppercase'>
+              Lorem ipsum dolor sit
+            </h2>
+          </div>
+        </div>
+        <hr className='border-grey' />
+
+        {/* SECOND ROW */}
+        <div className='grid h-[8rem] w-full grid-cols-[25%_auto_50%] gap-20'>
+          <div className='flex h-full  w-full flex-col justify-center'>
+            <h2 className='text-6xl font-semibold uppercase'>Lorem</h2>
+          </div>
+          <div className='h-full w-full overflow-hidden rounded-[40px_0_40px_40px]'>
+            <Image
+              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+              height={500}
+              width={350}
+              className='h-full w-full object-cover'
+              alt='first-image'
+            />
+          </div>
+          <div className='flex h-full w-full flex-col justify-center'>
+            <h2 className='text-6xl font-semibold uppercase '>
+              Lorem ipsum dolor
+            </h2>
+          </div>
+        </div>
+        <hr className='border-grey' />
+
+        {/* THIRD ROW */}
+        <div className='grid h-[8rem] w-full grid-cols-[40%_auto] gap-20'>
+          <div className='h-full w-full'>
+            <h2 className='text-6xl font-semibold uppercase '>Lorem ipsum</h2>
+          </div>
+          <div className='h-full w-full overflow-hidden rounded-[0_40px_0_40px]'>
+            <Image
+              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+              height={500}
+              width={1260}
+              className='h-full w-full object-cover'
+              alt='first-image'
+            />
+          </div>
+        </div>
+        <hr className='border-grey' />
+
+        {/* FOURTHROW */}
+        <div className='grid h-[8rem] w-full grid-cols-[35%_auto] gap-20 '>
+          <div className='h-full w-full overflow-hidden rounded-[40px_40px_40px_0]'>
+            <Image
+              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+              height={500}
+              width={700}
+              className='h-full w-full object-cover'
+              alt='first-image'
+            />
+          </div>
+          <div className='h-full w-full'>
+            <h2 className='text-6xl font-semibold uppercase '>
               Lorem ipsum dolor sit
             </h2>
           </div>
         </div>
 
-        {/* THIRD ROW */}
-        <div className="w-full h-full grid grid-cols-[25%_auto_50%] gap-20  ">
-          <div className="w-full h-full  flex flex-col justify-center">
-            <h2 className="text-6xl uppercase font-semibold">Lorem</h2>
-          </div>
-          <div className="w-full h-full overflow-hidden rounded-[40px_0_65px_40px]">
-            <Image
-              src="https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              height={500}
-              width={300}
-              className="w-full h-full object-cover"
-              alt="first-image"
-            />
-          </div>
-          <div className="w-full h-full flex flex-col justify-center">
-            <h2 className="text-6xl uppercase font-semibold ">
-              Lorem ipsum dolor
-            </h2>
-          </div>
-        </div>
-
-        {/* FOURTH ROW */}
-        <div className="w-full h-full bg-yellow-300 grid grid-cols-[40%_auto] gap-20">
-          <div className="w-full h-full bg-lime-400"></div>
-          <div className="w-full h-full bg-light"></div>
-        </div>
-
-        {/* FIFTH ROW */}
-        <div className="w-full h-full bg-blue grid grid-cols-[35%_auto_45%] gap-20">
-          <div className="w-full h-full bg-rose-400"></div>
-          <div className="w-full h-full bg-lime-400"></div>
-          <div className="w-full h-full bg-light"></div>
-        </div>
-
-        {/* LAST ROW */}
-        <div className="w-full h-full bg-green"></div>
+        <hr className='border-grey' />
       </div>
     </section>
   );

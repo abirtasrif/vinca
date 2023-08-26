@@ -1,5 +1,4 @@
-import Hero from "@/components/home/Hero";
-import Button from "@/components/ui/Button";
+import Hero from '@/components/home/Hero';
 
 const HomePage = () => {
   return (

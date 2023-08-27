@@ -3,8 +3,9 @@ export const data = [
     id: 1,
     title: 'Haircut Package',
     category: 'Hair Services',
-    masterCategory: 'Hair',
-    image: 'haircut.jpg',
+    masterCategory: 'Beauty Care',
+    image:
+      'https://images.pexels.com/photos/6954866/pexels-photo-6954866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description: 'Get a stylish haircut by our experienced hair stylists.',
     price: 35,
   },
@@ -13,7 +14,8 @@ export const data = [
     title: 'Spa Day',
     category: 'Spa Services',
     masterCategory: 'Spa',
-    image: 'spa.jpg',
+    image:
+      'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description:
       'Indulge in a relaxing spa day with massages, facials, and more.',
     price: 150,
@@ -22,8 +24,9 @@ export const data = [
     id: 3,
     title: 'Bridal Makeup Package',
     category: 'Makeup Services',
-    masterCategory: 'Makeup',
-    image: 'bridal-makeup.jpg',
+    masterCategory: 'Makeup Artistry',
+    image:
+      'https://images.pexels.com/photos/12952754/pexels-photo-12952754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description:
       'Enhance your natural beauty with our professional bridal makeup services.',
     price: 250,
@@ -32,8 +35,9 @@ export const data = [
     id: 4,
     title: 'Manicure and Pedicure Combo',
     category: 'Nail Services',
-    masterCategory: 'Nails',
-    image: 'manicure-pedicure.jpg',
+    masterCategory: 'Beauty Care',
+    image:
+      'https://images.pexels.com/photos/14267565/pexels-photo-14267565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description:
       'Pamper your hands and feet with a relaxing manicure and pedicure session.',
     price: 60,
@@ -42,19 +46,21 @@ export const data = [
     id: 5,
     title: 'Skin Rejuvenation Treatment',
     category: 'Skin Services',
-    masterCategory: 'Skin',
-    image: 'skin-treatment.jpg',
+    masterCategory: 'Beauty Care',
+    image:
+      'https://images.pexels.com/photos/4207234/pexels-photo-4207234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description:
       'Revitalize your skin with our advanced skin rejuvenation treatments.',
     price: 120,
   },
   {
     id: 6,
-    title: "Men's Grooming Package",
+    title: "Women's Grooming Package",
     category: 'Grooming Services',
-    masterCategory: 'Grooming',
-    image: 'mens-grooming.jpg',
-    description: 'Experience a complete grooming makeover designed for men.',
+    masterCategory: 'Makeup Artistry',
+    image:
+      'https://images.pexels.com/photos/6954163/pexels-photo-6954163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    description: 'Experience a complete grooming makeover designed for women.',
     price: 80,
   },
 ];

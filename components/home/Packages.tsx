@@ -5,7 +5,7 @@ const Packages = () => {
   return (
     <section className='wrapper section-padding' id='packages'>
       <SectionTitle title='Explore our beauty packages' subTitle='Packages' />
-      <HorizontalTab tabs={['Tab 1', 'Tab 2', 'Tab 3']}>
+      <HorizontalTab tabs={['Hair Care', 'Spa', 'Makeup Artistry']}>
         <p>Tab 1 Content</p>
         <p>Tab 2 Content</p>
         <p>Tab 3 Content</p>

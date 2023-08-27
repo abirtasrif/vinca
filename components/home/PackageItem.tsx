@@ -23,7 +23,7 @@ const PackageItem: React.FC<PackageItemProps> = ({
   price,
 }) => {
   return (
-    <div className='flex w-full flex-col gap-5'>
+    <div className='flex w-full flex-col gap-2'>
       <Link
         href={`/packages/${id}`}
         className='group h-[14rem] w-full overflow-hidden rounded-xl border border-grey/25'

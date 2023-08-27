@@ -12,6 +12,8 @@ const Packages = () => {
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
             .filter((item: any) => item.masterCategory === 'Beauty Care')
+            .sort((a: any, b: any) => a.price - b.price)
+            .slice(0, 4)
             .map((item: any) => (
               <PackageItem key={item.id} {...item} />
             ))}
@@ -21,6 +23,8 @@ const Packages = () => {
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
             .filter((item: any) => item.masterCategory === 'Spa')
+            .sort((a: any, b: any) => a.price - b.price)
+            .slice(0, 4)
             .map((item: any) => (
               <PackageItem key={item.id} {...item} />
             ))}
@@ -30,6 +34,8 @@ const Packages = () => {
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
             .filter((item: any) => item.masterCategory === 'Makeup Artistry')
+            .sort((a: any, b: any) => a.price - b.price)
+            .slice(0, 4)
             .map((item: any) => (
               <PackageItem key={item.id} {...item} />
             ))}

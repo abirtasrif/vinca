@@ -22,40 +22,38 @@ export const data = [
   },
   {
     id: 3,
-    title: 'Bridal Makeup Package',
+    title: 'Bridal Makeup',
     category: 'Makeup Services',
     masterCategory: 'Makeup Artistry',
     image:
       'https://images.pexels.com/photos/12952754/pexels-photo-12952754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    description:
-      'Enhance your natural beauty with our professional bridal makeup services.',
+    description: 'Enhance natural beauty with professional bridal makeup.',
     price: 250,
   },
   {
     id: 4,
-    title: 'Manicure and Pedicure Combo',
+    title: 'Manicure & Pedicure',
     category: 'Nail Services',
     masterCategory: 'Beauty Care',
     image:
       'https://images.pexels.com/photos/14267565/pexels-photo-14267565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     description:
-      'Pamper your hands and feet with a relaxing manicure and pedicure session.',
+      'Pamper your nails with a relaxing manicure and pedicure session.',
     price: 60,
   },
   {
     id: 5,
-    title: 'Skin Rejuvenation Treatment',
+    title: 'Skin Rejuvenation',
     category: 'Skin Services',
     masterCategory: 'Beauty Care',
     image:
       'https://images.pexels.com/photos/4207234/pexels-photo-4207234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    description:
-      'Revitalize your skin with our advanced skin rejuvenation treatments.',
+    description: 'Revitalize your skin with skin rejuvenation treatments.',
     price: 120,
   },
   {
     id: 6,
-    title: "Women's Grooming Package",
+    title: "Women's Grooming",
     category: 'Grooming Services',
     masterCategory: 'Makeup Artistry',
     image:

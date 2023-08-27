@@ -106,7 +106,7 @@ const Hero = () => {
         {/* HOVER BUTTON */}
         <Link
           href='/#packages'
-          className='eoq group absolute bottom-[15%] left-[34%] z-10 flex h-40 w-40 items-center justify-center overflow-hidden rounded-full bg-dark/80 text-lg uppercase text-light shadow-2xl shadow-dark/80 backdrop-blur-lg hover:shadow-violet/80'
+          className='eoq group absolute bottom-[15.5%] left-[34%] z-10 flex h-40 w-40 items-center justify-center overflow-hidden rounded-full bg-dark/80 text-lg uppercase text-light shadow-2xl shadow-dark/80 backdrop-blur-lg hover:shadow-violet/80'
         >
           <p className='z-30 '>Packages</p>
           <span className='eoq rounded-0 absolute bottom-0 left-0 right-0 top-full z-20 h-full w-full bg-violet group-hover:top-1/2'></span>

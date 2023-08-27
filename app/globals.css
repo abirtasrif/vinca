@@ -12,7 +12,7 @@ main {
 }
 
 .eoq {
-  transform: 500ms cubic-bezier(0.5, 1, 0.89, 1);
+  transition: 500ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 .section-padding {

@@ -27,7 +27,7 @@ const Hero = () => {
             </h2>
           </div>
         </div>
-        <hr className='border-grey/25' />
+        <hr className='border-gray/25' />
 
         {/* SECOND ROW */}
         <div className='grid h-[8rem] w-full grid-cols-[25%_auto_50%] gap-20'>
@@ -56,7 +56,7 @@ const Hero = () => {
             </h2>
           </div>
         </div>
-        <hr className='border-grey/25' />
+        <hr className='border-gray/25' />
 
         {/* THIRD ROW */}
         <div className='grid h-[8rem] w-full grid-cols-[40%_auto] gap-20'>
@@ -73,7 +73,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <hr className='border-grey/25' />
+        <hr className='border-gray/25' />
 
         {/* FOURTHROW */}
         <div className='grid h-[8rem] w-full grid-cols-[35%_auto] gap-20 '>
@@ -101,7 +101,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <hr className='border-grey/25' />
+        <hr className='border-gray/25' />
 
         {/* HOVER BUTTON */}
         <Link

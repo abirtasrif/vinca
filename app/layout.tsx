@@ -1,9 +1,8 @@
-import Navbar from '@/components/shared/Navbar';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Bai_Jamjuree } from 'next/font/google';
-import Footer from '@/components/shared/Footer';
 import { cn } from '@/lib/utils';
+import MasterProvider from '@/providers/MasterProvider';
 
 const baiJamjuree = Bai_Jamjuree({
   subsets: ['latin'],
@@ -12,7 +11,7 @@ const baiJamjuree = Bai_Jamjuree({
 
 export const metadata: Metadata = {
   title: 'Vinca | Home',
-  description: 'Welcome',
+  description: 'Welcome to our beauty salon',
 };
 
 export default function RootLayout({
@@ -28,9 +27,7 @@ export default function RootLayout({
           'bg-light/10 text-dark antialiased'
         )}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <MasterProvider>{children}</MasterProvider>
       </body>
     </html>
   );

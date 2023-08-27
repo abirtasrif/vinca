@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import { Playfair_Display } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 const playfairDisplay = Playfair_Display({ subsets: ['latin'] });
 
 const Hero = () => {
   return (
     <section className='wrapper section-padding h-[calc(100vh-5rem)] '>
-      <div className='grid-rows-8 grid h-auto w-full items-center gap-3'>
+      <div className='grid-rows-8 relative grid h-auto w-full items-center gap-3'>
         {/* FIRSTROW */}
         <div className='grid h-[7rem] w-full grid-cols-[30%_auto] gap-20'>
           <div className='h-full w-full overflow-hidden rounded-[0_40px_0_40px]'>
@@ -21,7 +22,7 @@ const Hero = () => {
           </div>
 
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='text-6xl font-semibold uppercase'>
+            <h2 className='headline-1 font-semibold uppercase'>
               Lorem ipsum dolor sit
             </h2>
           </div>
@@ -34,7 +35,7 @@ const Hero = () => {
             <h2
               className={cn(
                 playfairDisplay.className,
-                'text-6xl font-semibold uppercase'
+                'headline-1 font-semibold uppercase'
               )}
             >
               Lorem
@@ -50,7 +51,7 @@ const Hero = () => {
             />
           </div>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='text-6xl font-semibold uppercase '>
+            <h2 className='headline-1 font-semibold uppercase '>
               Lorem ipsum dolor
             </h2>
           </div>
@@ -60,7 +61,7 @@ const Hero = () => {
         {/* THIRD ROW */}
         <div className='grid h-[8rem] w-full grid-cols-[40%_auto] gap-20'>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='text-6xl font-semibold uppercase '>Lorem ipsum</h2>
+            <h2 className='headline-1 font-semibold uppercase '>Lorem ipsum</h2>
           </div>
           <div className='h-full w-full overflow-hidden rounded-[0_40px_0_40px]'>
             <Image
@@ -86,11 +87,11 @@ const Hero = () => {
             />
           </div>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='text-6xl font-semibold uppercase text-orange'>
+            <h2 className='headline-1 font-semibold uppercase text-green'>
               <span
                 className={cn(
                   playfairDisplay.className,
-                  'font-normal lowercase '
+                  'mr-1 font-normal lowercase'
                 )}
               >
                 Lorem
@@ -101,6 +102,16 @@ const Hero = () => {
         </div>
 
         <hr className='border-grey/25' />
+
+        {/* HOVER BUTTON */}
+        <Link
+          href='/#packages'
+          className='eoq group absolute bottom-[15%] left-[34%] z-10 flex h-40 w-40 items-center justify-center overflow-hidden rounded-full bg-dark/80 text-lg uppercase text-light shadow-2xl shadow-dark/80 backdrop-blur-lg hover:shadow-violet/80'
+        >
+          <p className='z-30 '>Packages</p>
+          <span className='eoq rounded-0 absolute bottom-0 left-0 right-0 top-full z-20 h-full w-full bg-violet group-hover:top-1/2'></span>
+          <span className='eoq rounded-0 absolute -top-full bottom-0 left-0 right-0 z-20 h-full w-full bg-violet group-hover:-top-1/2'></span>
+        </Link>
       </div>
     </section>
   );

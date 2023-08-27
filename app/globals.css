@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 /* Global styles */
+main {
+  @apply mt-20;
+}
+
 .wrapper {
   @apply container mx-auto px-5 md:px-0;
 }
 
 .eoq {
-  transform: 300ms cubic-bezier(0.5, 1, 0.89, 1);
+  transform: 500ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 .section-padding {
@@ -20,9 +24,14 @@
   @apply relative;
 }
 .link-item::after {
-  @apply absolute content-[""] left-1/2 -translate-x-1/2 bottom-0 w-0 h-px bg-dark duration-300;
+  @apply absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-dark duration-300 content-[""];
 }
 
 .link-item:hover::after {
   @apply w-full;
+}
+
+/* TYPOGRAPHY */
+.headline-1 {
+  @apply text-6xl;
 }

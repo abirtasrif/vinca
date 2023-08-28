@@ -3,6 +3,7 @@ import SectionTitle from '../shared/SectionTitle';
 import PackageItem from '../home/PackageItem';
 import { data } from '@/data/packages';
 import HorizontalTab from '../ui/HorizontalTab';
+import { packageItem } from '@/types/packageItem';
 
 const AllPackages = () => {
   return (
@@ -13,9 +14,11 @@ const AllPackages = () => {
         {/* Beauty Care */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            .filter((item: any) => item.masterCategory === 'Beauty Care')
-            .sort((a: any, b: any) => a.price - b.price)
-            .map((item: any) => (
+            .filter(
+              (item: packageItem) => item.masterCategory === 'Beauty Care'
+            )
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
+            .map((item: packageItem) => (
               <PackageItem key={item.id} {...item} />
             ))}
         </div>
@@ -23,9 +26,9 @@ const AllPackages = () => {
         {/* Spa */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            .filter((item: any) => item.masterCategory === 'Spa')
-            .sort((a: any, b: any) => a.price - b.price)
-            .map((item: any) => (
+            .filter((item: packageItem) => item.masterCategory === 'Spa')
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
+            .map((item: packageItem) => (
               <PackageItem key={item.id} {...item} />
             ))}
         </div>
@@ -33,9 +36,11 @@ const AllPackages = () => {
         {/* Makeup Artistry */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            .filter((item: any) => item.masterCategory === 'Makeup Artistry')
-            .sort((a: any, b: any) => a.price - b.price)
-            .map((item: any) => (
+            .filter(
+              (item: packageItem) => item.masterCategory === 'Makeup Artistry'
+            )
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
+            .map((item: packageItem) => (
               <PackageItem key={item.id} {...item} />
             ))}
         </div>

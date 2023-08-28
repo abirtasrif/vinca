@@ -5,6 +5,7 @@ import PackageItem from './PackageItem';
 import Link from 'next/link';
 import { buttonVariants } from '../ui/Button';
 import { cn } from '@/lib/utils';
+import { packageItem } from '@/types/packageItem';
 
 const Packages = () => {
   return (
@@ -14,10 +15,12 @@ const Packages = () => {
         {/* Beauty Care */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            .filter((item: any) => item.masterCategory === 'Beauty Care')
-            .sort((a: any, b: any) => a.price - b.price)
+            .filter(
+              (item: packageItem) => item.masterCategory === 'Beauty Care'
+            )
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
             .slice(0, 4)
-            .map((item: any) => (
+            .map((item: packageItem) => (
               <PackageItem key={item.id} {...item} />
             ))}
         </div>
@@ -25,10 +28,10 @@ const Packages = () => {
         {/* Spa */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            .filter((item: any) => item.masterCategory === 'Spa')
-            .sort((a: any, b: any) => a.price - b.price)
+            .filter((item: packageItem) => item.masterCategory === 'Spa')
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
             .slice(0, 4)
-            .map((item: any) => (
+            .map((item: packageItem) => (
               <PackageItem key={item.id} {...item} />
             ))}
         </div>
@@ -36,10 +39,12 @@ const Packages = () => {
         {/* Makeup Artistry */}
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {data
-            .filter((item: any) => item.masterCategory === 'Makeup Artistry')
-            .sort((a: any, b: any) => a.price - b.price)
+            .filter(
+              (item: packageItem) => item.masterCategory === 'Makeup Artistry'
+            )
+            .sort((a: packageItem, b: packageItem) => a.price - b.price)
             .slice(0, 4)
-            .map((item: any) => (
+            .map((item: packageItem) => (
               <PackageItem key={item.id} {...item} />
             ))}
         </div>

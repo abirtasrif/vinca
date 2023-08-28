@@ -13,7 +13,7 @@ const Hero = () => {
         <div className='grid h-[7rem] w-full grid-cols-[30%_auto] gap-20'>
           <div className='h-full w-full overflow-hidden rounded-[0_40px_0_40px]'>
             <Image
-              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+              src='https://images.pexels.com/photos/6621181/pexels-photo-6621181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
               height={500}
               width={620}
               className='h-full w-full object-cover'
@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
           <div className='h-full w-full overflow-hidden rounded-[40px_0_40px_40px]'>
             <Image
-              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+              src='https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
               height={500}
               width={350}
               className='h-full w-full object-cover'
@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
           <div className='h-full w-full overflow-hidden rounded-[0_40px_0_40px]'>
             <Image
-              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+              src='https://images.pexels.com/photos/5490778/pexels-photo-5490778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
               height={500}
               width={1260}
               className='h-full w-full object-cover'
@@ -79,7 +79,7 @@ const Hero = () => {
         <div className='grid h-[8rem] w-full grid-cols-[35%_auto] gap-20 '>
           <div className='h-full w-full overflow-hidden rounded-[40px_40px_40px_0]'>
             <Image
-              src='https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+              src='https://images.pexels.com/photos/6621333/pexels-photo-6621333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
               height={500}
               width={700}
               className='h-full w-full object-cover'

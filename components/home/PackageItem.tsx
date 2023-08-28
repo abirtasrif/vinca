@@ -26,18 +26,19 @@ const PackageItem: React.FC<PackageItemProps> = ({
     <div className='flex w-full flex-col gap-2'>
       <Link
         href={`/packages/${id}`}
-        className='border-gray/25 group h-[14rem] w-full overflow-hidden rounded-xl border'
+        className='group h-[14rem] w-full overflow-hidden rounded-xl border border-gray/25'
       >
         <Image
           src={image}
           alt={title}
           height={640}
           width={550}
+          priority
           className='eoq h-full w-full object-cover brightness-90 group-hover:scale-125 group-hover:brightness-100'
         />
       </Link>
 
-      <div className='eoq bg-gray/25 hover:bg-gray/50 flex w-full flex-col gap-2.5 rounded-xl border p-5'>
+      <div className='eoq flex w-full flex-col gap-2.5 rounded-xl border bg-gray/25 p-5 hover:bg-gray/50'>
         <span className='font text-sm uppercase tracking-[0.375em] text-green'>
           {category}
         </span>

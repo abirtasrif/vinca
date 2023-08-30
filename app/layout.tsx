@@ -2,7 +2,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Bai_Jamjuree } from 'next/font/google';
 import { cn } from '@/lib/utils';
-import MasterProvider from '@/providers/MasterProvider';
 
 const baiJamjuree = Bai_Jamjuree({
   subsets: ['latin'],
@@ -27,7 +26,7 @@ export default function RootLayout({
           'bg-light/10 text-dark antialiased'
         )}
       >
-        <MasterProvider>{children}</MasterProvider>
+        {children}
       </body>
     </html>
   );

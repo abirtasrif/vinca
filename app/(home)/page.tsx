@@ -1,14 +1,20 @@
 import Community from '@/components/home/Community';
 import Hero from '@/components/home/Hero';
 import Packages from '@/components/home/Packages';
+import Footer from '@/components/shared/Footer';
+import Navbar from '@/components/shared/Navbar';
 
 const HomePage = () => {
   return (
-    <main>
-      <Hero />
-      <Packages />
-      <Community />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Packages />
+        <Community />
+      </main>
+      <Footer />
+    </>
   );
 };
 

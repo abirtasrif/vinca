@@ -20,7 +20,7 @@ const Packages: React.FC<PackagesProps> = (fromPackagePage) => {
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {!fromPackagePage &&
             data
-              .filter(
+              ?.filter(
                 (item: packageItem) => item.masterCategory === 'Beauty Care'
               )
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
@@ -31,7 +31,7 @@ const Packages: React.FC<PackagesProps> = (fromPackagePage) => {
 
           {fromPackagePage &&
             data
-              .filter(
+              ?.filter(
                 (item: packageItem) => item.masterCategory === 'Beauty Care'
               )
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
@@ -44,7 +44,7 @@ const Packages: React.FC<PackagesProps> = (fromPackagePage) => {
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {!fromPackagePage &&
             data
-              .filter((item: packageItem) => item.masterCategory === 'Spa')
+              ?.filter((item: packageItem) => item.masterCategory === 'Spa')
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .slice(0, 4)
               .map((item: packageItem) => (
@@ -53,7 +53,7 @@ const Packages: React.FC<PackagesProps> = (fromPackagePage) => {
 
           {fromPackagePage &&
             data
-              .filter((item: packageItem) => item.masterCategory === 'Spa')
+              ?.filter((item: packageItem) => item.masterCategory === 'Spa')
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
               .map((item: packageItem) => (
                 <PackageItem key={item.id} packageItem={item} />
@@ -64,7 +64,7 @@ const Packages: React.FC<PackagesProps> = (fromPackagePage) => {
         <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {!fromPackagePage &&
             data
-              .filter(
+              ?.filter(
                 (item: packageItem) => item.masterCategory === 'Makeup Artistry'
               )
               .sort((a: packageItem, b: packageItem) => a.price - b.price)
@@ -75,7 +75,7 @@ const Packages: React.FC<PackagesProps> = (fromPackagePage) => {
 
           {fromPackagePage &&
             data
-              .filter(
+              ?.filter(
                 (item: packageItem) => item.masterCategory === 'Makeup Artistry'
               )
               .sort((a: packageItem, b: packageItem) => a.price - b.price)

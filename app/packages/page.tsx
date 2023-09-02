@@ -1,4 +1,4 @@
-import AllPackages from '@/components/packages/AllPackages';
+import Packages from '@/components/home/Packages';
 import FooterMini from '@/components/shared/FooterMini';
 import Navbar from '@/components/shared/Navbar';
 
@@ -7,7 +7,7 @@ const PackagesPage = () => {
     <>
       <Navbar />
       <main>
-        <AllPackages />
+        <Packages fromPackagePage />
       </main>
       <FooterMini />
     </>

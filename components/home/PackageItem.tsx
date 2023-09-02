@@ -4,33 +4,22 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { buttonVariants } from '../ui/Button';
 import { formatCurrency } from '@/utils/formatCurrency';
+import { packageItem } from '@/types/packageItem';
 
 interface PackageItemProps {
-  id: number;
-  title: string;
-  image: string;
-  category: string;
-  description: string;
-  price: number;
+  packageItem: packageItem;
 }
 
-const PackageItem: React.FC<PackageItemProps> = ({
-  id,
-  title,
-  image,
-  category,
-  description,
-  price,
-}) => {
+const PackageItem: React.FC<PackageItemProps> = ({ packageItem }) => {
   return (
     <div className='flex w-full flex-col gap-2'>
       <Link
-        href={`/packages/${id}`}
+        href={`/packages/${packageItem.id}`}
         className='group h-[14rem] w-full overflow-hidden rounded-xl border border-gray/25'
       >
         <Image
-          src={image}
-          alt={title}
+          src={packageItem.image}
+          alt={packageItem.title}
           height={640}
           width={550}
           priority
@@ -40,15 +29,17 @@ const PackageItem: React.FC<PackageItemProps> = ({
 
       <div className='eoq flex w-full flex-col gap-2.5 rounded-xl border bg-gray/25 p-5 hover:bg-gray/50'>
         <span className='font text-sm uppercase tracking-[0.375em] text-green'>
-          {category}
+          {packageItem.category}
         </span>
-        <h4 className='text-2xl '>{title}</h4>
+        <h4 className='text-2xl '>{packageItem.title}</h4>
         <hr />
-        <p className='text-dark'>{description}</p>
+        <p className='text-dark'>{packageItem.description}</p>
         <div className='flex items-center justify-between gap-2.5'>
-          <p className='text-2xl '>{formatCurrency(price, 'en-US', 'USD')}</p>
+          <p className='text-2xl '>
+            {formatCurrency(packageItem.price, 'en-US', 'USD')}
+          </p>
           <Link
-            href={`/packages/${id}`}
+            href={`/packages/${packageItem.id}`}
             className={buttonVariants({ variant: 'lavender' })}
           >
             View Details

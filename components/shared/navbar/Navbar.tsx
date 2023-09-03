@@ -10,7 +10,7 @@ const Navbar = async () => {
       <div className='wrapper grid grid-cols-3 items-center gap-20'>
         {/* LEFT NAV */}
         <nav>
-          <ul className='flex justify-end gap-3'>
+          <ul className='flex content-start gap-3'>
             <li>
               <Link href='/#packages' className='link-item'>
                 Packages
@@ -45,7 +45,7 @@ const Navbar = async () => {
 
         {/* RIGHT NAV  */}
         <nav>
-          <ul className='flex justify-end gap-3'>
+          <ul className='flex items-center justify-end gap-3'>
             <li>
               <Link href='/' className='link-item'>
                 Link 4

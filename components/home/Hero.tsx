@@ -23,22 +23,22 @@ const Hero = () => {
 
           <div className='flex h-full w-full flex-col justify-center'>
             <h2 className='headline-1 font-semibold uppercase'>
-              Lorem ipsum dolor
+              <span className='text-violet'>ignite</span> your inner
             </h2>
           </div>
         </div>
         <hr className='border-gray/25' />
 
         {/* SECOND ROW */}
-        <div className='grid h-[8rem] w-full grid-cols-[25%_auto_50%] gap-20'>
+        <div className='grid h-[8rem] w-full grid-cols-[21%_auto_56%] gap-20'>
           <div className='flex h-full  w-full flex-col justify-center'>
             <h2
               className={cn(
                 playfairDisplay.className,
-                'headline-1 font-semibold uppercase'
+                'headline-1 font-semibold uppercase text-dark/80'
               )}
             >
-              Lorem
+              divine
             </h2>
           </div>
           <div className='h-full w-full overflow-hidden rounded-[40px_0_40px_40px]'>
@@ -51,7 +51,9 @@ const Hero = () => {
             />
           </div>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase '>Lorem ipsum</h2>
+            <h2 className='headline-1 font-semibold uppercase'>
+              essence <span className='text-pink'>revealing</span>
+            </h2>
           </div>
         </div>
         <hr className='border-gray/25' />
@@ -59,7 +61,9 @@ const Hero = () => {
         {/* THIRD ROW */}
         <div className='grid h-[8rem] w-full grid-cols-[40%_auto] gap-20'>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase '>Lorem ipsum</h2>
+            <h2 className='headline-1 font-semibold uppercase '>
+              the <span className='text-orange'>power</span>
+            </h2>
           </div>
           <div className='h-full w-full overflow-hidden rounded-[0_40px_0_40px]'>
             <Image
@@ -85,16 +89,16 @@ const Hero = () => {
             />
           </div>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase text-green'>
+            <h2 className='headline-1 font-semibold uppercase '>
               <span
                 className={cn(
                   playfairDisplay.className,
-                  'mr-1 font-normal lowercase'
+                  'mr-1 font-normal lowercase text-green'
                 )}
               >
-                Lorem
+                within through
               </span>
-              ipsum dolor
+              Vinca
             </h2>
           </div>
         </div>

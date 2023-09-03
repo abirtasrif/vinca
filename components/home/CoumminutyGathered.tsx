@@ -35,12 +35,12 @@ const CoumminutyGathered = () => {
           {/* UPPER LEFT */}
           <div className='absolute -left-[12%] top-[10%] z-[4] w-3/5 text-5xl text-light'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore
-            ea tempora harum accusamus quas perferendis impedit magnam nam odit.
+            ea tempora harum accusamus quas perferendis.
           </div>
           {/* LOWER RIGHT */}
-          <div className='absolute -right-[12%] bottom-[10%] z-[4] w-3/5 text-5xl text-light'>
+          <div className='absolute -right-[12%] bottom-[10%] z-[4] w-3/5 text-right text-5xl text-light'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempore
-            ea tempora harum accusamus quas perferendis impedit magnam nam odit.
+            ea tempora harum accusamus quas perferendis.
           </div>
         </div>
       </div>

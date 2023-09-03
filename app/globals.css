@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global styles */
-/* main {
-  @apply mt-20;
-} */
-
 html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
@@ -38,5 +33,5 @@ html {
 
 /* TYPOGRAPHY */
 .headline-1 {
-  @apply text-6xl;
+  font-size: 4.3rem;
 }

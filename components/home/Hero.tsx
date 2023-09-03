@@ -23,7 +23,7 @@ const Hero = () => {
 
           <div className='flex h-full w-full flex-col justify-center'>
             <h2 className='headline-1 font-semibold uppercase'>
-              Lorem ipsum dolor sit
+              Lorem ipsum dolor
             </h2>
           </div>
         </div>
@@ -51,9 +51,7 @@ const Hero = () => {
             />
           </div>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase '>
-              Lorem ipsum dolor
-            </h2>
+            <h2 className='headline-1 font-semibold uppercase '>Lorem ipsum</h2>
           </div>
         </div>
         <hr className='border-gray/25' />
@@ -96,7 +94,7 @@ const Hero = () => {
               >
                 Lorem
               </span>
-              ipsum dolor sit
+              ipsum dolor
             </h2>
           </div>
         </div>

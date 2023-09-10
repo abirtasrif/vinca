@@ -1,5 +1,5 @@
-import Community from '@/components/home/Community';
-import CoumminutyGathered from '@/components/home/CoumminutyGathered';
+import CommunityGathered from '@/components/home/CoummunityGathered';
+import Community from '@/components/home/Coummunity';
 import Hero from '@/components/home/Hero';
 import Packages from '@/components/packages/Packages';
 import Footer from '@/components/shared/footer/Footer';
@@ -13,7 +13,7 @@ const HomePage = () => {
         <Hero />
         <Packages />
         <Community />
-        <CoumminutyGathered />
+        <CommunityGathered />
       </main>
       <Footer />
     </>

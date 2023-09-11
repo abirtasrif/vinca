@@ -1,12 +1,12 @@
 import { cn } from '@/lib/utils';
 
-interface sectionTitleProps {
+interface SectionTitleProps {
   title: string;
   subTitle: string;
   color?: string;
 }
 
-const SectionTitle: React.FC<sectionTitleProps> = ({
+const SectionTitle: React.FC<SectionTitleProps> = ({
   title,
   subTitle,
   color = 'bg-red',

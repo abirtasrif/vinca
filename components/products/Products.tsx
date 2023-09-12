@@ -1,4 +1,6 @@
 import SectionTitle from '../shared/SectionTitle';
+import { productsData } from '@/data/products';
+import ProductItem from './ProductItem';
 
 const Products = () => {
   return (
@@ -10,8 +12,10 @@ const Products = () => {
       />
 
       {/* ALL PRODUCTS */}
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
-        {/* MULTIPLE PRODUCTS */}
+      <div className='grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
+        {productsData.map((item) => (
+          <ProductItem key={item.id} item={item} />
+        ))}
       </div>
     </section>
   );

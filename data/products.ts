@@ -1,8 +1,13 @@
-export const products = [
+export const productsData = [
   {
     id: 1,
     title: 'Luxurious Anti-Aging Serum',
-    images: ['serum1.jpg', 'serum1_2.jpg', 'serum1_3.jpg', 'serum1_4.jpg'],
+    images: [
+      'https://images.pexels.com/photos/8490228/pexels-photo-8490228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'serum1_2.jpg',
+      'serum1_3.jpg',
+      'serum1_4.jpg',
+    ],
     category: 'Skincare',
     description:
       'Revitalize your skin with our luxurious anti-aging serum. This serum is packed with powerful ingredients to reduce wrinkles and improve skin elasticity.',
@@ -12,7 +17,7 @@ export const products = [
     id: 2,
     title: 'Lipstick Collection Set',
     images: [
-      'lipstick_set1.jpg',
+      'https://images.pexels.com/photos/90297/pexels-photo-90297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       'lipstick_set1_2.jpg',
       'lipstick_set1_3.jpg',
       'lipstick_set1_4.jpg',
@@ -26,7 +31,7 @@ export const products = [
     id: 3,
     title: 'Hydrating Rosewater Mist',
     images: [
-      'rosewater_mist1.jpg',
+      'https://images.pexels.com/photos/1410405/pexels-photo-1410405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       'rosewater_mist1_2.jpg',
       'rosewater_mist1_3.jpg',
       'rosewater_mist1_4.jpg',
@@ -40,7 +45,7 @@ export const products = [
     id: 4,
     title: 'Eyeshadow Palette',
     images: [
-      'eyeshadow_palette1.jpg',
+      'https://images.pexels.com/photos/1749452/pexels-photo-1749452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       'eyeshadow_palette1_2.jpg',
       'eyeshadow_palette1_3.jpg',
       'eyeshadow_palette1_4.jpg',
@@ -54,7 +59,7 @@ export const products = [
     id: 5,
     title: 'Hair Repair Serum',
     images: [
-      'hair_serum1.jpg',
+      'https://images.pexels.com/photos/9909784/pexels-photo-9909784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       'hair_serum1_2.jpg',
       'hair_serum1_3.jpg',
       'hair_serum1_4.jpg',
@@ -68,7 +73,7 @@ export const products = [
     id: 6,
     title: 'Matte Finish Foundation',
     images: [
-      'foundation1.jpg',
+      'https://images.pexels.com/photos/3685538/pexels-photo-3685538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       'foundation1_2.jpg',
       'foundation1_3.jpg',
       'foundation1_4.jpg',
@@ -81,7 +86,12 @@ export const products = [
   {
     id: 7,
     title: 'Exfoliating Scrub',
-    images: ['scrub1.jpg', 'scrub1_2.jpg', 'scrub1_3.jpg', 'scrub1_4.jpg'],
+    images: [
+      'https://images.pexels.com/photos/7795646/pexels-photo-7795646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'scrub1_2.jpg',
+      'scrub1_3.jpg',
+      'scrub1_4.jpg',
+    ],
     category: 'Skincare',
     description:
       'Reveal smoother and brighter skin with our exfoliating scrub. It gently removes dead skin cells and leaves your skin feeling revitalized.',
@@ -91,7 +101,7 @@ export const products = [
     id: 8,
     title: 'Natural Coconut Body Lotion',
     images: [
-      'body_lotion1.jpg',
+      'https://images.pexels.com/photos/14788377/pexels-photo-14788377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       'body_lotion1_2.jpg',
       'body_lotion1_3.jpg',
       'body_lotion1_4.jpg',

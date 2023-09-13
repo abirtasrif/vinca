@@ -5,6 +5,7 @@ import Packages from '@/components/packages/Packages';
 import Footer from '@/components/shared/footer/Footer';
 import Navbar from '@/components/shared/navbar/Navbar';
 import Products from '@/components/products/Products';
+import Gallery from '@/components/home/Gallery';
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
         <Products />
         <Community />
         <CommunityGathered />
+        <Gallery />
       </main>
       <Footer />
     </>

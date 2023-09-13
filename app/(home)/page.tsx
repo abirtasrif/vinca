@@ -4,7 +4,7 @@ import Hero from '@/components/home/Hero';
 import Packages from '@/components/packages/Packages';
 import Footer from '@/components/shared/footer/Footer';
 import Navbar from '@/components/shared/navbar/Navbar';
-import Products from '@/components/products/products';
+import Products from '@/components/products/Products';
 
 const HomePage = () => {
   return (

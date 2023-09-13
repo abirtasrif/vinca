@@ -11,14 +11,14 @@ interface ProductItemProps {
 const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
   return (
     <div className='flex h-full w-full flex-col gap-5 overflow-hidden rounded-xl border border-gray/50 p-5'>
-      <div className='h-[20rem] w-full overflow-hidden rounded-lg'>
+      <div className='group h-[20rem] w-full overflow-hidden rounded-lg'>
         <Image
           src={item.images[0]}
           alt={item.title}
           width={340}
           height={500}
           priority
-          className='h-full w-full object-cover'
+          className='eoq h-full w-full object-cover group-hover:scale-125'
         />
       </div>
       <div className='flex flex-col gap-2.5'>
@@ -32,7 +32,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ item }) => {
           <p className='text-2xl'>{formatCurrency(item.price)}</p>
           <Link
             href={`/products/${item.id}`}
-            className={buttonVariants({ variant: 'lavender' })}
+            className={buttonVariants({ variant: 'ocean' })}
           >
             Buy Now
           </Link>

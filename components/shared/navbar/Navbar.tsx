@@ -3,8 +3,8 @@ import { buttonVariants } from '../../ui/Button';
 
 const Navbar = async () => {
   return (
-    <header className='item-center flex h-20 border-b border-gray bg-white/80 backdrop-blur-lg'>
-      <div className='wrapper grid grid-cols-3 items-center gap-20'>
+    <header className='flex h-20 items-center border-b border-gray bg-white/80 backdrop-blur-lg'>
+      <div className='wrapper container grid grid-cols-3 items-center gap-20'>
         {/* LEFT NAV */}
         <nav>
           <ul className='flex content-start gap-3'>

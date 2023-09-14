@@ -8,7 +8,7 @@ html {
 }
 
 .wrapper {
-  @apply container mx-auto px-5 md:px-0;
+  @apply container mx-auto px-5 lg:px-8 xl:px-10 2xl:px-12;
 }
 
 .eoq {
@@ -24,7 +24,7 @@ html {
   @apply relative;
 }
 .link-item::after {
-  @apply absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-dark duration-300 content-[""];
+  @apply eoq absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-dark duration-300 content-[""];
 }
 
 .link-item:hover::after {

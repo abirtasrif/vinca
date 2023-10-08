@@ -9,6 +9,8 @@ import { buttonVariants } from '../ui/Button';
 import { cn } from '@/lib/utils';
 import { beautyPackageType } from '@/types/packageItem';
 import useFetch from '@/hooks/use-fetch';
+import Loading from '../shared/loading';
+import Error from '../shared/error';
 
 interface PackagesProps {
   fromPackagePage?: boolean;
@@ -34,70 +36,88 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
           {/* Beauty Care */}
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'>
             {!fromPackagePage &&
-              data
+              beautyPackages
                 ?.filter(
-                  (item: packageItem) => item.masterCategory === 'Beauty Care'
+                  (item: beautyPackageType) => item.category === 'Beauty Care'
                 )
-                .sort((a: packageItem, b: packageItem) => a.price - b.price)
+                .sort(
+                  (a: beautyPackageType, b: beautyPackageType) =>
+                    a.price - b.price
+                )
                 .slice(0, 4)
-                .map((item: packageItem) => (
-                  <PackageItem key={item.id} packageItem={item} />
+                .map((item: beautyPackageType) => (
+                  <PackageItem key={item._id} packageItem={item} />
                 ))}
 
             {fromPackagePage &&
-              data
+              beautyPackages
                 ?.filter(
-                  (item: packageItem) => item.masterCategory === 'Beauty Care'
+                  (item: beautyPackageType) => item.category === 'Beauty Care'
                 )
-                .sort((a: packageItem, b: packageItem) => a.price - b.price)
-                .map((item: packageItem) => (
-                  <PackageItem key={item.id} packageItem={item} />
+                .sort(
+                  (a: beautyPackageType, b: beautyPackageType) =>
+                    a.price - b.price
+                )
+                .map((item: beautyPackageType) => (
+                  <PackageItem key={item._id} packageItem={item} />
                 ))}
           </div>
 
           {/* Spa */}
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'>
             {!fromPackagePage &&
-              data
-                ?.filter((item: packageItem) => item.masterCategory === 'Spa')
-                .sort((a: packageItem, b: packageItem) => a.price - b.price)
+              beautyPackages
+                ?.filter((item: beautyPackageType) => item.category === 'Spa')
+                .sort(
+                  (a: beautyPackageType, b: beautyPackageType) =>
+                    a.price - b.price
+                )
                 .slice(0, 4)
-                .map((item: packageItem) => (
-                  <PackageItem key={item.id} packageItem={item} />
+                .map((item: beautyPackageType) => (
+                  <PackageItem key={item._id} packageItem={item} />
                 ))}
 
             {fromPackagePage &&
-              data
-                ?.filter((item: packageItem) => item.masterCategory === 'Spa')
-                .sort((a: packageItem, b: packageItem) => a.price - b.price)
-                .map((item: packageItem) => (
-                  <PackageItem key={item.id} packageItem={item} />
+              beautyPackages
+                ?.filter((item: beautyPackageType) => item.category === 'Spa')
+                .sort(
+                  (a: beautyPackageType, b: beautyPackageType) =>
+                    a.price - b.price
+                )
+                .map((item: beautyPackageType) => (
+                  <PackageItem key={item._id} packageItem={item} />
                 ))}
           </div>
 
           {/* Makeup Artistry */}
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'>
             {!fromPackagePage &&
-              data
+              beautyPackages
                 ?.filter(
-                  (item: packageItem) =>
-                    item.masterCategory === 'Makeup Artistry'
+                  (item: beautyPackageType) =>
+                    item.category === 'Makeup Artistry'
                 )
-                .sort((a: packageItem, b: packageItem) => a.price - b.price)
+                .sort(
+                  (a: beautyPackageType, b: beautyPackageType) =>
+                    a.price - b.price
+                )
                 .slice(0, 4)
-                .map((item: packageItem) => (
-                  <PackageItem key={item.id} packageItem={item} />
+                .map((item: beautyPackageType) => (
+                  <PackageItem key={item._id} packageItem={item} />
                 ))}
 
             {fromPackagePage &&
-              data
+              beautyPackages
                 ?.filter(
-                  (item: packageItem) =>
-                    item.masterCategory === 'Makeup Artistry'
+                  (item: beautyPackageType) =>
+                    item.category === 'Makeup Artistry'
                 )
-                .sort((a: packageItem, b: packageItem) => a.price - b.price)
-                .map((item: packageItem) => (
-                  <PackageItem key={item.id} packageItem={item} />
+                .sort(
+                  (a: beautyPackageType, b: beautyPackageType) =>
+                    a.price - b.price
+                )
+                .map((item: beautyPackageType) => (
+                  <PackageItem key={item._id} packageItem={item} />
                 ))}
           </div>
         </HorizontalTab>

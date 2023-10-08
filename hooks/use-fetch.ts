@@ -24,3 +24,5 @@ const useFetch = (endpoint: string, token: string = '') => {
 
   return { data, error, isLoading };
 };
+
+export default useFetch;

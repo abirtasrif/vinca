@@ -1,22 +1,34 @@
 import PackageDetailsSection from '@/components/package-details/PackageDetailsSection';
+import Error from '@/components/shared/error';
 import FooterMini from '@/components/shared/footer/FooterMini';
+import Loading from '@/components/shared/loading';
 import Navbar from '@/components/shared/navbar/Navbar';
-import { data } from '@/data/packages';
-import { packageItem } from '@/types/packageItem';
+import useFetch from '@/hooks/use-fetch';
 
 const PackageDetails = ({ params }: { params: { id: string } }) => {
-  const id = +params.id;
+  const {
+    data: packageItem,
+    isLoading,
+    error,
+  } = useFetch(`/api/beauty_packages/${params.id}`);
 
-  const packageItem = data.find((item: packageItem) => item.id === id);
-
-  if (!packageItem) {
-    return null;
-  }
   return (
     <>
       <Navbar />
       <main>
-        <PackageDetailsSection packageItem={packageItem} />
+        {isLoading && (
+          <div className='flex h-[calc(100vh-5rem)] items-center justify-center'>
+            <Loading isLoading={isLoading} />
+          </div>
+        )}
+
+        {error && (
+          <div className='flex h-[calc(100vh-5rem)] items-center justify-center'>
+            <Error error={error.message} />
+          </div>
+        )}
+
+        {packageItem && <PackageDetailsSection packageItem={packageItem} />}
       </main>
       <FooterMini />
     </>

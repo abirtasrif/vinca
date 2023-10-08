@@ -4,7 +4,6 @@ import Hero from '@/components/home/Hero';
 import Packages from '@/components/packages/Packages';
 import Footer from '@/components/shared/footer/Footer';
 import Navbar from '@/components/shared/navbar/Navbar';
-import Products from '@/components/products/Products';
 import Gallery from '@/components/home/Gallery';
 
 const HomePage = () => {
@@ -14,7 +13,6 @@ const HomePage = () => {
       <main>
         <Hero />
         <Packages />
-        <Products />
         <Community />
         <CommunityGathered />
         <Gallery />

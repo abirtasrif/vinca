@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+main {
+  @apply mt-20;
+}
+
 .wrapper {
   @apply container mx-auto px-5 lg:px-8 xl:px-10 2xl:px-12;
 }

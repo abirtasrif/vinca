@@ -36,7 +36,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'>
             {!fromPackagePage &&
               beautyPackages
-                ?.filter(
+                .filter(
                   (item: beautyPackageType) => item.category === 'Beauty Care'
                 )
                 .sort(
@@ -50,7 +50,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
 
             {fromPackagePage &&
               beautyPackages
-                ?.filter(
+                .filter(
                   (item: beautyPackageType) => item.category === 'Beauty Care'
                 )
                 .sort(
@@ -66,7 +66,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'>
             {!fromPackagePage &&
               beautyPackages
-                ?.filter((item: beautyPackageType) => item.category === 'Spa')
+                .filter((item: beautyPackageType) => item.category === 'Spa')
                 .sort(
                   (a: beautyPackageType, b: beautyPackageType) =>
                     a.price - b.price
@@ -78,7 +78,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
 
             {fromPackagePage &&
               beautyPackages
-                ?.filter((item: beautyPackageType) => item.category === 'Spa')
+                .filter((item: beautyPackageType) => item.category === 'Spa')
                 .sort(
                   (a: beautyPackageType, b: beautyPackageType) =>
                     a.price - b.price
@@ -92,7 +92,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4'>
             {!fromPackagePage &&
               beautyPackages
-                ?.filter(
+                .filter(
                   (item: beautyPackageType) =>
                     item.category === 'Makeup Artistry'
                 )
@@ -107,7 +107,7 @@ const Packages: React.FC<PackagesProps> = ({ fromPackagePage }) => {
 
             {fromPackagePage &&
               beautyPackages
-                ?.filter(
+                .filter(
                   (item: beautyPackageType) =>
                     item.category === 'Makeup Artistry'
                 )

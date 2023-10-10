@@ -1,4 +1,5 @@
 import { beautyPackageType } from '@/types/packageItem';
+import React from 'react';
 
 interface PackageDetailsSectionProps {
   packageItem: beautyPackageType;
@@ -7,7 +8,11 @@ interface PackageDetailsSectionProps {
 const PackageDetailsSection: React.FC<PackageDetailsSectionProps> = ({
   packageItem,
 }) => {
-  return <div className='wrapper section-padding'>{packageItem.title}</div>;
+  return (
+    <section className='wrapper section-padding'>
+      <p>{packageItem.title}</p>
+    </section>
+  );
 };
 
 export default PackageDetailsSection;

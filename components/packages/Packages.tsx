@@ -1,6 +1,5 @@
 'use client';
 
-import { data } from '@/data/packages';
 import HorizontalTab from '../ui/HorizontalTab';
 import SectionTitle from '../shared/SectionTitle';
 import PackageItem from './PackageItem';

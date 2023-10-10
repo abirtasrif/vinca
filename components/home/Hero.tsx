@@ -22,7 +22,7 @@ const Hero = () => {
           </div>
 
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase'>
+            <h2 className='headline-1 2xl:headlin-2 font-semibold uppercase'>
               <span className='text-violet'>ignite</span> your inner
             </h2>
           </div>
@@ -35,7 +35,7 @@ const Hero = () => {
             <h2
               className={cn(
                 playfairDisplay.className,
-                'headline-1 font-semibold uppercase text-dark/80'
+                'headline-1 2xl:headlin-2 font-semibold uppercase text-dark/80'
               )}
             >
               divine
@@ -51,7 +51,7 @@ const Hero = () => {
             />
           </div>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase'>
+            <h2 className='headline-1 2xl:headlin-2 font-semibold uppercase'>
               essence <span className='text-pink'>revealing</span>
             </h2>
           </div>
@@ -61,7 +61,7 @@ const Hero = () => {
         {/* THIRD ROW */}
         <div className='grid h-[8rem] w-full grid-cols-[40%_auto] gap-20'>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase '>
+            <h2 className='headline-1 2xl:headlin-2 font-semibold uppercase '>
               the <span className='text-orange'>power</span>
             </h2>
           </div>
@@ -89,7 +89,7 @@ const Hero = () => {
             />
           </div>
           <div className='flex h-full w-full flex-col justify-center'>
-            <h2 className='headline-1 font-semibold uppercase '>
+            <h2 className='headline-1 2xl:headlin-2 font-semibold uppercase '>
               <span
                 className={cn(
                   playfairDisplay.className,

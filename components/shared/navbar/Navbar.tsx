@@ -7,15 +7,15 @@ const Navbar = async () => {
       <div className='wrapper container grid grid-cols-3 items-center gap-20'>
         {/* LEFT NAV */}
         <nav>
-          <ul className='flex content-start gap-3'>
+          <ul className='flex content-start gap-5'>
             <li>
               <Link href='/#packages' className='link-item'>
                 Packages
               </Link>
             </li>
             <li>
-              <Link href='#products' className='link-item'>
-                Products
+              <Link href='/' className='link-item'>
+                Link 2
               </Link>
             </li>
             <li>
@@ -42,7 +42,7 @@ const Navbar = async () => {
 
         {/* RIGHT NAV  */}
         <nav>
-          <ul className='flex items-center justify-end gap-3'>
+          <ul className='flex items-center justify-end gap-5'>
             <li>
               <Link href='/' className='link-item'>
                 Link 4

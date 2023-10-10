@@ -37,6 +37,9 @@ main {
 
 /* TYPOGRAPHY */
 .headline-1 {
+  font-size: 4rem;
+}
+.headline-2 {
   font-size: 4.3rem;
 }
 

@@ -1,3 +1,5 @@
+'use client';
+
 import PackageDetailsSection from '@/components/package-details/PackageDetailsSection';
 import Error from '@/components/shared/error';
 import FooterMini from '@/components/shared/footer/FooterMini';

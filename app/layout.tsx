@@ -1,16 +1,12 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Bai_Jamjuree } from 'next/font/google';
-import { cn } from '@/lib/utils';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const baiJamjuree = Bai_Jamjuree({
-  subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700'],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Vinca | Home',
-  description: 'Welcome to our beauty salon',
+  title: "Vinca | Home",
+  description: "A beauty parlour and spa website",
 };
 
 export default function RootLayout({
@@ -19,15 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body
-        className={cn(
-          baiJamjuree.className,
-          'bg-light/10 text-dark antialiased'
-        )}
-      >
-        {children}
-      </body>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

@@ -1,24 +1,35 @@
-import CommunityGathered from '@/components/home/CoummunityGathered';
-import Community from '@/components/home/Coummunity';
-import Hero from '@/components/home/Hero';
-import Packages from '@/components/packages/Packages';
-import Footer from '@/components/shared/footer/Footer';
-import Navbar from '@/components/shared/navbar/Navbar';
-import Gallery from '@/components/home/Gallery';
+import React from "react";
 
 const HomePage = () => {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Packages />
-        <Community />
-        <CommunityGathered />
-        <Gallery />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <section className="container py-20">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          nesciunt.
+        </h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          nesciunt.
+        </h2>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          nesciunt.
+        </h3>
+        <h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          nesciunt.
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          nesciunt.
+        </p>
+        <small>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+          nesciunt.
+        </small>
+      </section>
+    </main>
   );
 };
 

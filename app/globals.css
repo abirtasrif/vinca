@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* BASE STYLES */
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+/* COMMON STYLES */
+.section-padding {
+  @apply py-20;
+}
+
+.eoq {
+  transition: 500ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 /* TYPOGRAPHY STYLES */
 h1 {
   @apply text-8xl font-medium;

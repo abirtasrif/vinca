@@ -14,11 +14,13 @@ const Slider = () => {
         navigation={true}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 5000,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         loop={true}
         grabCursor={true}
+        speed={1000}
+        className='mySlider h-full w-full'
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>

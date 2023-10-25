@@ -5,6 +5,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { data } from '@/data/sliderContents';
+import Image from 'next/image';
 
 const Slider = () => {
   return (
@@ -22,10 +24,17 @@ const Slider = () => {
         speed={1000}
         className='mySlider h-full w-full'
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        {data.map((slide) => (
+          <SwiperSlide key={slide.heading} className='h-full w-full'>
+            <Image
+              src={slide.image}
+              alt={slide.heading}
+              width={1200}
+              height={800}
+              className='h-full w-full object-cover'
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

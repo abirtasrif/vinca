@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+main {
+  @apply mt-20;
+}
+
 /* COMMON STYLES */
 .section-padding {
   @apply py-40;
@@ -52,4 +56,17 @@ p {
 
 small {
   @apply text-xs font-bold uppercase tracking-widest;
+}
+
+/* LINK STYLES */
+.link-item {
+  @apply relative;
+}
+
+.link-item::after {
+  @apply eoq absolute bottom-0 left-1/2 h-px w-0 -translate-x-1/2 bg-black content-[""];
+}
+
+.link-item:hover::after {
+  @apply w-full;
 }

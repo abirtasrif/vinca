@@ -10,7 +10,7 @@ html {
 
 /* COMMON STYLES */
 .section-padding {
-  @apply py-20;
+  @apply py-40;
 }
 
 .eoq {

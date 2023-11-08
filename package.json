@@ -16,6 +16,7 @@
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.0.1",
+    "swr": "^2.2.4",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {

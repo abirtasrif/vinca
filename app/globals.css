@@ -14,7 +14,7 @@ main {
 
 /* COMMON STYLES */
 .section-padding {
-  @apply py-40;
+  @apply py-20;
 }
 
 .eoq {

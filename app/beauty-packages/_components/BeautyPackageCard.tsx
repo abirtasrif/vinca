@@ -21,7 +21,7 @@ const BeautyPackageCard: React.FC<BeautyPackageCardProps> = ({ item }) => {
           width={1280}
           height={720}
           priority
-          className='eq h-full w-full object-cover brightness-75 group-hover:scale-125 group-hover:brightness-100'
+          className='eoq h-full w-full object-cover brightness-75 group-hover:scale-125 group-hover:brightness-100'
         />
       </Link>
       <div className='space-y-2.5'>

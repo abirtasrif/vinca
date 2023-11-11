@@ -10,7 +10,7 @@ const fetcher = async (url: string, token: string = '') => {
 
   if (!res.ok) throw new Error('Data fetch Error !');
 
-  return res.json;
+  return res.json();
 };
 
 const useFetch = (endpoint: string, token: string = '') => {

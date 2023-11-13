@@ -37,7 +37,7 @@ const Slider = () => {
               className='h-full w-full object-cover'
             />
             <Overlay />
-            <div className='sp container absolute bottom-0 left-0 right-0 top-0 h-full w-full space-y-5 text-white'>
+            <div className='sp container absolute bottom-0 left-0 right-0 top-0 flex h-full w-full flex-col items-start justify-center gap-5 text-white'>
               <h1>{slide.heading}</h1>
               <p className='max-w-6xl'>{slide.subHeading}</p>
               <Link

@@ -1,8 +1,11 @@
 'use client';
 
 import Button from '@/components/ui/Button';
+import { axiosPost } from '@/libs/axiosPost';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useCallback, useState } from 'react';
+import toast from 'react-hot-toast';
 
 interface SignInFormData {
   email: string;
@@ -15,13 +18,29 @@ const SignInForm = () => {
     password: '',
   });
 
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  const router = useRouter();
+
   const handleSubmit = useCallback(
     async (e: React.SyntheticEvent) => {
       e.preventDefault();
+      setIsLoading(true);
+      const data = await axiosPost('/api/auth/login', formData);
 
-      console.log(formData);
+      if (data) {
+        setIsLoading(false);
+        setFormData({
+          email: '',
+          password: '',
+        });
+        toast.success('Login successfull.');
+        router.push('/');
+      } else {
+        setIsLoading(false);
+      }
     },
-    [formData]
+    [formData, router]
   );
 
   return (
@@ -47,7 +66,7 @@ const SignInForm = () => {
             type='email'
             id='email'
             placeholder='hello@example.com'
-            className='eq w-full rounded-2xl border border-gray bg-transparent p-5 outline-none focus:border-blue'
+            className='eoq w-full rounded-xl border border-gray bg-transparent px-5 py-3 outline-none focus:border-blue'
           />
         </div>
 
@@ -63,11 +82,11 @@ const SignInForm = () => {
             type='password'
             id='password'
             placeholder='Write your password'
-            className='eq w-full rounded-2xl border border-gray bg-transparent p-5 outline-none focus:border-blue'
+            className='eoq w-full rounded-xl border border-gray bg-transparent px-5 py-5 outline-none focus:border-blue'
           />
         </div>
 
-        <Button variant='secondary' type='submit'>
+        <Button variant='secondary' type='submit' isLoading={isLoading}>
           Login
         </Button>
 
